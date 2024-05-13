@@ -1,0 +1,27 @@
+{
+  "name": "ahj-sse-ws-backend",
+  "description": "Simple browser-based messenger (backend)",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "pm2 start server.js --watch",
+    "dev": "pm2-dev start server.js",
+    "stop": "pm2 delete server.js",
+    "update": "pm2 --update-env"
+  },
+  "author": "aacmkt",
+  "license": "ISC",
+  "dependencies": {
+    "@koa/cors": "^5.0.0",
+    "http-event-stream": "^0.2.0",
+    "koa": "^2.15.3",
+    "koa-body": "^6.0.1",
+    "koa-combine-routers": "^4.0.2",
+    "koa-router": "^12.0.1",
+    "koa-static": "^5.0.0",
+    "pm2": "^5.3.1",
+    "uuid": "^9.0.1",
+    "ws": "^8.17.0"
+  }
+}
